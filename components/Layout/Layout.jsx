@@ -2,18 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "../styles/modules/Layout.module.css";
-import utilStyles from "../styles/modules/Utils.module.css";
+import styles from "../../styles/modules/Layout.module.css";
+import utilStyles from "../../styles/modules/Utils.module.css";
 
 import { Envelope, GithubLogo, LinkedinLogo, Rewind } from "@phosphor-icons/react";
 
-export const siteTitle = "Next.js Blog Sample";
+export const siteTitle = "Isaac Hermel's Next.js Blog";
 
-export default function Layout({ home, children }) {
+export function Layout({ home, children }) {
   return (
     <div className={`${styles.container} ${!home && utilStyles.flexDirectionColumn}`}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -40,8 +40,8 @@ export default function Layout({ home, children }) {
             />
             <h1 className={utilStyles.heading2Xl}>Isaac Hermel</h1>
             <p className={`${utilStyles.justifyText} ${utilStyles.headingSm}`}>
-              E aí, tudo bem? Eu sou o Isaac, desenvolvedor, designer, estudante e autodidata de 19 anos. Por aqui você pode ver alguns
-              posts sobre algumas paradinhas que eu desenvolvo, espero que goste!
+              E aí, tudo bem com você? Eu sou Isaac, tenho 19 anos e sou desenvolvedor, UI/UX designer, estudante e autodidata. Por aqui você vai poder ver
+              alguns posts aleatórios que eu fizer sobre alguma coisa que estou estudando ou achei muito top, espero que goste!
             </p>
             <ul className={styles.linksList}>
               <li>
